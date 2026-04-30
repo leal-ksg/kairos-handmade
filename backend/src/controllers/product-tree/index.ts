@@ -41,6 +41,8 @@ export class ProductTreeController implements IProductTreeController {
   async deleteNodes(
     products: DeleteProductTreeDTO[],
   ): Promise<HttpResponse<void>> {
-    throw new Error("Method not implemented.");
+    const result = await this.productTreeRepository.delete(products);
+
+    return toHttpResponse(result);
   }
 }
