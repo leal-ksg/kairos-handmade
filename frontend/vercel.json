@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/v1/:path*",
-      "destination": "https://kairos-handmade.onrender.com/api/v1/:path*"
+      "destination": "https://kairos-handmade-9ilx.onrender.com/api/v1/:path*"
     }
   ]
 }
